@@ -6,9 +6,22 @@
   "repository": "git@github.com:trigo-at/querystring-to-orientdbquery.git",
   "author": "ParzivalSec <lukas@trigo.at>",
   "license": "MIT",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha --harmony-async-await **/*.specs.js",
+    "lint": "eslint ./**/*.js; exit 0;",
+    "semantic-release": "semantic-release pre && npm publish && sematic-release post"
+  },
   "devDependencies": {
     "@trigo/eslint-config-trigo": "^3.2.0",
-    "chai": "^3.5.0"
+    "chai": "^3.5.0",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-mocha": "^4.8.0",
+    "mocha": "^3.2.0",
+    "semantic-release": "^6.3.2"
   },
-  "dependencies": {}
+  "publishConfig": {
+    "access": "restricted"
+  }
 }
