@@ -7,7 +7,7 @@
   "author": "ParzivalSec <lukas@trigo.at>",
   "license": "MIT",
   "scripts": {
-    "test": "NODE_ENV=test ./node_modules/.bin/mocha --harmony-async-await **/*.specs.js",
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha **/*.specs.js",
     "lint": "eslint ./**/*.js; exit 0;",
     "semantic-release": "semantic-release pre && npm publish && sematic-release post"
   },
