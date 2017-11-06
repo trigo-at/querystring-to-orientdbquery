@@ -1,6 +1,6 @@
 {
   "name": "@trigo/querystring-to-orientdbquery",
-  "version": "1.4.3",
+  "version": "1.4.2",
   "description": "Convert a querystring to an orientdb query (SQL)",
   "main": "index.js",
   "repository": "git@github.com:trigo-at/querystring-to-orientdbquery.git",
