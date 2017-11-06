@@ -1,13 +1,13 @@
 {
   "name": "@trigo/querystring-to-orientdbquery",
-  "version": "1.4.2",
+  "version": "1.4.4",
   "description": "Convert a querystring to an orientdb query (SQL)",
   "main": "index.js",
   "repository": "git@github.com:trigo-at/querystring-to-orientdbquery.git",
   "author": "ParzivalSec <lukas@trigo.at>",
   "license": "MIT",
   "scripts": {
-    "test": "NODE_ENV=test ./node_modules/.bin/mocha **/*.specs.js",
+    "test": "NODE_ENV=test nyc mocha --timeout=60000 specs",
     "lint": "eslint ./**/*.js; exit 0;",
     "semantic-release": "semantic-release pre && npm publish && sematic-release post"
   },
@@ -24,5 +24,8 @@
   "publishConfig": {
     "access": "restricted"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@trigo/atrix-orientdb": "^0.3.3",
+    "nyc": "^11.3.0"
+  }
 }
